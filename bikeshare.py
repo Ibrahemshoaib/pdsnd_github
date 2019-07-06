@@ -20,13 +20,13 @@ def get_filters():
     while city != 'chicago' and city != 'new york city' and city != 'washington':
         print('Enter a valid city name')
         city = input('Would you like to see data for: chicago / new york city / washington\n').lower()
-    
+
     month = input('Filter the data by: month (type january or february or march or april or may or june) / all (for no filter)\n').lower()
     while month != 'january' and month != 'february' and month != 'march' and month != 'april' and month != 'may' and month != 'june' and       month != 'all':
         print('Enter a valid month name')
         month = input('Filter the data by: month (type january or february or march or april or may or june) / all (for no                           filter)\n').lower()
 
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+
     day = input('Filter the data by: day (type monday or tuesday or wednesday or thursday or friday or saturday or sunday) / all (for no            filter)\n').lower()
     while day != 'monday' and day != 'tuesday' and day != 'wednesday' and day != 'thursday' and day != 'friday' and day != 'saturday' and       day != 'sunday' and day != 'all':
         print('Enter a valid day name')
@@ -50,7 +50,7 @@ def load_data(city, month, day):
     # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
 
-    # convert the Start Time and End Time columns to datetime
+
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
 
@@ -81,7 +81,7 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
+    
     popular_month = df['month'].mode()[0]
     print('Most Popular month:', popular_month)
 
