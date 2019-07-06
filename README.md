@@ -1,7 +1,9 @@
-Date created
+##Date created
+
 Project created on 1/6/2019 README file last updated on 6/7/2019
 
 Explore US Bikeshare Data
+
 I used Python to explore data related to bike share systems for three major cities in the US. I wrote code to import the data and answer questions by computing descriptive statistics. My script takes raw user input to create an interactive experience in the terminal to present these statistics.
 
 The statistics computed are :
@@ -43,4 +45,5 @@ Software requirements
 You should have Python 3, NumPy, and pandas installed using Anaconda A text editor like Sublime or Atom A terminal application
 
 Credits
+
 Thanks to the Udacity team for this great project!
